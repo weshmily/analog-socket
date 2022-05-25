@@ -7,7 +7,7 @@
             "code": "websocket推送",
             "explain": "websocket推送",
             "cmds": [
-                "websocket推送","ping"
+                "websocket推送"
             ]
         }
     ]

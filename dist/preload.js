@@ -1,10 +1,10 @@
 //websocket.js
 // 搭建websocket服务器
-require("./plugin-npm.js")
+const ws = require("nodejs-websocket");
 
 var _server
 window.initWebScoket = function (port) {
-    _server = global.ws.createServer(conn => {
+    _server = ws.createServer(conn => {
         // 接收客户端返回的数据
         conn.on("text", function (str) {
             console.log(str, "接收客户端传过来的值");
